@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="dashboard">
+            <div class="dashboard__sidebar sidebar" id="sidebar">
+
+                <div class="sidebar__block">
+                    <div class="sidebar__header header">
+                        <img class="header__img" src="./images/logo.svg" alt="">
+                        <h1 class="header__title">Dashboard</h1>
+                        <small class="header__version">v.01</small>
+                    </div>
+
+                    <nav class="sidebar__nav">
+                        <ul class="sidebar__list">
+                            <li class="sidebar__title ">
+                                <img class="sidebar__icon" src="./images/sidebar-icons/dashboard.svg" alt="">
+                                <h3 href="#" class="sidebar__link">Dashboard</h3>
+                            </li>
+
+                            <li class="sidebar__item">
+                                <img class="sidebar__icon" src="./images/sidebar-icons/product.svg" alt="">
+                                <a href="#" class="sidebar__link">Product</a>
+                                <img class="sidebar__arrow-right" src="./images/sidebar-arrows/gray-arrow-right.svg"
+                                    alt="">
+                            </li>
+                            <li class="sidebar__item sidebar__item_focused">
+                                <img class="sidebar__icon" src="./images/sidebar-icons/customers.svg" alt="">
+                                <a href="#" class="sidebar__link">Customers</a>
+                                <img class="sidebar__arrow-right" src="./images/sidebar-arrows/white-arrow-right.svg"
+                                    alt="">
+                            </li>
+                            <li class="sidebar__item">
+                                <img class="sidebar__icon" src="./images/sidebar-icons/income.svg" alt="">
+                                <a href="#" class="sidebar__link">Income</a>
+                                <img class="sidebar__arrow-right" src="./images/sidebar-arrows/gray-arrow-right.svg"
+                                    alt="">
+                            </li>
+                            <li class="sidebar__item">
+                                <img class="sidebar__icon" src="./images/sidebar-icons/promote.svg" alt="">
+                                <a href="#" class="sidebar__link">Promote</a>
+                                <img class="sidebar__arrow-right" src="./images/sidebar-arrows/gray-arrow-right.svg"
+                                    alt="">
+                            </li>
+                            <li class="sidebar__item">
+                                <img class="sidebar__icon" src="./images/sidebar-icons/help.svg" alt="">
+                                <a href="#" class="sidebar__link">Help</a>
+                                <img class="sidebar__arrow-right" src="./images/sidebar-arrows/gray-arrow-right.svg"
+                                    alt="">
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="sidebar__evano-block">
+                        <img class="sidebar__evano-img" src="/images//Evano.svg" alt="">
+                        <div class="sidebar__evano-info">
+                            <p class="sidebar__name">Evano</p>
+                            <p class="sidebar__position">Project Manager</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <main class="dashboard__main main-content">
+                <header class="main-content__header">
+
+                    <button class="main-content__burger burger" id="burger">
+                        <div class="burger__stick burger__first-stick"></div>
+                        <div class="burger__stick burger__second-stick"></div>
+                        <div class="burger__stick burger__third-stick"></div>
+                    </button>
+
+                    <h2 class="main-content__title">Hello Evano👋🏼,</h2>
+                </header>
+
+                <section class="main-content__section section">
+                    <div class="main-content__container">
+                        <div class="section__search-block search-block">
+                            <div class="search-block__titles-container">
+                                <h2 class="section__title">All Customers</h2>
+                                <p class="section__subtitle">Active Members</p>
+                            </div>
+                            <div class="section__input-wrapper">
+                                <div class="section__input-container">
+                                    <img class="section__search-icon" src="/images//magnifying-glass.svg" alt="">
+                                    <input class="section__input" type="text" placeholder="Search">
+                                </div>
+                            </div>
+                        </div>
+
+                        <table class="section__table-body table">
+                            <thead class="table__table-header table-header">
+                                <tr class="table-header__row">
+                                    <th class="table-header__cell">Customer Name</th>
+                                    <th class="table-header__cell">Company</th>
+                                    <th class="table-header__cell">Phone Number</th>
+                                    <th class="table-header__cell">Email</th>
+                                    <th class="table-header__cell">Country</th>
+                                    <th class="table-header__cell table-header__cell_status">Status</th>
+                                </tr>
+                            </thead>
+
+                            <tbody class="table__table-body table-body">
+                                <tr class="table-body__row">
+                                    <td class="table-body__group">
+                                        <span class="table-body__key">Customer Name</span>
+                                        <span class="table-body__value">Jane Cooper</span>
+                                    </td>
+                                    <td class="table-body__group">
+                                        <span class="table-body__key">Company</span>
+                                        <span class="table-body__value">Microsoft</span>
+                                    </td>
+                                    <td class="table-body__group">
+                                        <span class="table-body__key">Phone Number</span>
+                                        <span class="table-body__value">(225) 555-0118</span>
+                                    </td>
+                                    <td class="table-body__group">
+                                        <span class="table-body__key">Email</span>
+                                        <span class="table-body__value">jane@microsoft.com</span>
+                                    </td>
+                                    <td class="table-body__group">
+                                        <span class="table-body__key">Country</span>
+                                        <span class="table-body__value">United States</span>
+                                    </td>
+                                    <td class="table-body__group table-body__group_indicator">
+                                        <span class="table-body__key">Status</span>
+                                        <div class="table-body__value table-body__value_indicator">
+                                            <span class="table-body__indicator table-body__indicator_active">Active</span>
+                                        </div>    
+                                    </td>
+                                </tr>
+                                <tr class="table-body__row">
+                                    <td class="table-body__group">
+                                        <span class="table-body__key">Customer Name</span>
+                                        <span class="table-body__value">Floyd Miles</span>
+                                    </td>
+                                    <td class="table-body__group">
+                                        <span class="table-body__key">Company</span>
+                                        <span class="table-body__value">Yahoo</span>
+                                    </td>
+                                    <td class="table-body__group">
+                                        <span class="table-body__key">Phone Number</span>
+                                        <span class="table-body__value">(205) 555-0100</span>
+                                    </td>
+                                    <td class="table-body__group">
+                                        <span class="table-body__key">Email</span>
+                                        <span class="table-body__value">floyd@yahoo.com</span>
+                                    </td>
+                                    <td class="table-body__group">
+                                        <span class="table-body__key">Country</span>
+                                        <span class="table-body__value">Kiribati</span>
+                                    </td>
+                                    <td class="table-body__group table-body__group_indicator">
+                                        <span class="table-body__key">Status</span>
+                                        <div class="table-body__value table-body__value_indicator">
+                                            <span class="table-body__indicator">Inactive</span>
+                                        </div>    
+                                    </td>
+                                </tr>
+                                <tr class="table-body__row">
+                                    <td class="table-body__group">
+                                        <span class="table-body__key">Customer Name</span>
+                                        <span class="table-body__value">Ronald Richards</span>
+                                    </td>
+                                    <td class="table-body__group">
+                                        <span class="table-body__key">Company</span>
+                                        <span class="table-body__value">Adobe</span>
+                                    </td>
+                                    <td class="table-body__group">
+                                        <span class="table-body__key">Phone Number</span>
+                                        <span class="table-body__value">(302) 555-0107</span>
+                                    </td>
+                                    <td class="table-body__group">
+                                        <span class="table-body__key">Email</span>
+                                        <span class="table-body__value">ronald@adobe.com</span>
+                                    </td>
+                                    <td class="table-body__group">
+                                        <span class="table-body__key">Country</span>
+                                        <span class="table-body__value">Israel</span>
+                                    </td>
+                                    <td class="table-body__group table-body__group_indicator">
+                                        <span class="table-body__key">Status</span>
+                                        <div class="table-body__value table-body__value_indicator">
+                                            <span class="table-body__indicator">Inactive</span>
+                                        </div>    
+                                    </td>
+                                </tr>
+                                <tr class="table-body__row">
+                                    <td class="table-body__group">
+                                        <span class="table-body__key">Customer Name</span>
+                                        <span class="table-body__value">Marvin McKinney</span>
+                                    </td>
+                                    <td class="table-body__group">
+                                        <span class="table-body__key">Company</span>
+                                        <span class="table-body__value">Tesla</span>
+                                    </td>
+                                    <td class="table-body__group">
+                                        <span class="table-body__key">Phone Number</span>
+                                        <span class="table-body__value">(252) 555-0126</span>
+                                    </td>
+                                    <td class="table-body__group">
+                                        <span class="table-body__key">Email</span>
+                                        <span class="table-body__value">marvin@tesla.com</span>
+                                    </td>
+                                    <td class="table-body__group">
+                                        <span class="table-body__key">Country</span>
+                                        <span class="table-body__value">Iran</span>
+                                    </td>
+                                    <td class="table-body__group table-body__group_indicator">
+                                        <span class="table-body__key">Status</span>
+                                        <div class="table-body__value table-body__value_indicator">
+                                            <span class="table-body__indicator table-body__indicator_active">Active</span>
+                                        </div>    
+                                    </td>
+                                </tr>
+                                <tr class="table-body__row">
+                                    <td class="table-body__group">
+                                        <span class="table-body__key">Customer Name</span>
+                                        <span class="table-body__value">Jerome Bell</span>
+                                    </td>
+                                    <td class="table-body__group">
+                                        <span class="table-body__key">Company</span>
+                                        <span class="table-body__value">Google</span>
+                                    </td>
+                                    <td class="table-body__group">
+                                        <span class="table-body__key">Phone Number</span>
+                                        <span class="table-body__value">(629) 555-0129</span>
+                                    </td>
+                                    <td class="table-body__group">
+                                        <span class="table-body__key">Email</span>
+                                        <span class="table-body__value">jerome@google.com</span>
+                                    </td>
+                                    <td class="table-body__group">
+                                        <span class="table-body__key">Country</span>
+                                        <span class="table-body__value">Réunion</span>
+                                    </td>
+                                    <td class="table-body__group table-body__group_indicator">
+                                        <span class="table-body__key">Status</span>
+                                        <div class="table-body__value table-body__value_indicator">
+                                            <span class="table-body__indicator table-body__indicator_active">Active</span>
+                                        </div>    
+                                    </td>
+                                </tr>
+                                <tr class="table-body__row">
+                                    <td class="table-body__group">
+                                        <span class="table-body__key">Customer Name</span>
+                                        <span class="table-body__value">Kathryn Murphy</span>
+                                    </td>
+                                    <td class="table-body__group">
+                                        <span class="table-body__key">Company</span>
+                                        <span class="table-body__value">Microsoft</span>
+                                    </td>
+                                    <td class="table-body__group">
+                                        <span class="table-body__key">Phone Number</span>
+                                        <span class="table-body__value">(406) 555-0120</span>
+                                    </td>
+                                    <td class="table-body__group">
+                                        <span class="table-body__key">Email</span>
+                                        <span class="table-body__value">kathryn@microsoft.com</span>
+                                    </td>
+                                    <td class="table-body__group">
+                                        <span class="table-body__key">Country</span>
+                                        <span class="table-body__value">Curaçao</span>
+                                    </td>
+                                    <td class="table-body__group table-body__group_indicator">
+                                        <span class="table-body__key">Status</span>
+                                        <div class="table-body__value table-body__value_indicator">
+                                            <span class="table-body__indicator table-body__indicator_active">Active</span>
+                                        </div>    
+                                    </td>
+                                </tr>
+                                <tr class="table-body__row">
+                                    <td class="table-body__group">
+                                        <span class="table-body__key">Customer Name</span>
+                                        <span class="table-body__value">Jacob Jones</span>
+                                    </td>
+                                    <td class="table-body__group">
+                                        <span class="table-body__key">Company</span>
+                                        <span class="table-body__value">Yahoo</span>
+                                    </td>
+                                    <td class="table-body__group">
+                                        <span class="table-body__key">Phone Number</span>
+                                        <span class="table-body__value">(208) 555-0112</span>
+                                    </td>
+                                    <td class="table-body__group">
+                                        <span class="table-body__key">Email</span>
+                                        <span class="table-body__value">jacob@yahoo.com</span>
+                                    </td>
+                                    <td class="table-body__group">
+                                        <span class="table-body__key">Country</span>
+                                        <span class="table-body__value">Brazil</span>
+                                    </td>
+                                    <td class="table-body__group table-body__group_indicator">
+                                        <span class="table-body__key">Status</span>
+                                        <div class="table-body__value table-body__value_indicator">
+                                            <span class="table-body__indicator table-body__indicator_active">Active</span>
+                                        </div>    
+                                    </td>
+                                </tr>
+                                <tr class="table-body__row">
+                                    <td class="table-body__group">
+                                        <span class="table-body__key">Customer Name</span>
+                                        <span class="table-body__value">Kristin Watson</span>
+                                    </td>
+                                    <td class="table-body__group">
+                                        <span class="table-body__key">Company</span>
+                                        <span class="table-body__value">Facebook</span>
+                                    </td>
+                                    <td class="table-body__group">
+                                        <span class="table-body__key">Phone Number</span>
+                                        <span class="table-body__value">(704) 555-0127</span>
+                                    </td>
+                                    <td class="table-body__group">
+                                        <span class="table-body__key">Email</span>
+                                        <span class="table-body__value">kristin@facebook.com</span>
+                                    </td>
+                                    <td class="table-body__group">
+                                        <span class="table-body__key">Country</span>
+                                        <span class="table-body__value">Åland Islands</span>
+                                    </td>
+                                    <td class="table-body__group table-body__group_indicator">
+                                        <span class="table-body__key">Status</span>
+                                        <div class="table-body__value table-body__value_indicator">
+                                            <span class="table-body__indicator">Inactive</span>
+                                        </div>    
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                        <div class="section__pagination pagination">
+                            <span class="pagination__info">Showing data 1 to 8 of 256K entries</span>
+                            <nav class="pagination__controls">
+                                <a href="#" class="pagination__page">
+                                    < </a>
+                                        <a href="#" class="pagination__page pagination__page-active">1</a>
+                                        <a href="#" class="pagination__page">2</a>
+                                        <a href="#" class="pagination__page">3</a>
+                                        <a href="#" class="pagination__page">4</a>
+                                        <a href="#" class="pagination__page pagination__page-more">...</a>
+                                        <a href="#" class="pagination__page">40</a>
+                                        <a href="#" class="pagination__page">></a>
+                            </nav>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+</body>
+
+</html>
